@@ -21,6 +21,7 @@ a {
 .btn {
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 *,
@@ -58,7 +59,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   padding: 10px;
-  z-index: -1;
+  z-index: 1;
 }
 
 .header__topBox {
@@ -78,7 +79,7 @@ body {
   height: 60px;
   color: #eee;
   padding: 10px;
-  z-index: 1;
+  z-index: 1000;
 }
 
 .header__logo p {
@@ -97,6 +98,13 @@ body {
 .header__mobileNav .fa-bars {
   font-size: 4rem;
   padding: 10px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.header__mobileNav .fa-bars:hover {
+  color: #fff;
 }
 
 .header__nav {
@@ -112,7 +120,7 @@ body {
 }
 
 .header__nav a:hover {
-  background-color: rgba(0, 0, 0, 0.308);
+  background-color: rgba(104, 104, 104, 0.308);
 }
 
 .header__mainBox {
@@ -150,10 +158,18 @@ body {
 
 .header__btn {
   background: #eee;
+  border: 2px solid #eee;
   padding: 15px 40px;
   font-size: 2rem;
   text-transform: uppercase;
   border-radius: 50px;
+  -webkit-transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s;
+}
+
+.header__btn:hover {
+  background: transparent;
+  color: #eee;
 }
 
 @media (min-width: 768px) {
