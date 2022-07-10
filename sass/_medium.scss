@@ -1,0 +1,11 @@
+@media (min-width: 768px) {
+	.header {
+		&__mobileNav {
+			display: none;
+		}
+
+        &__nav {
+            display: block;
+        }
+	}
+}

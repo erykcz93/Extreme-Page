@@ -1,0 +1,173 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-shadow {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.712);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/mountain_640.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 10px;
+  z-index: -1;
+}
+
+.header__topBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  color: #eee;
+  padding: 10px;
+  z-index: 1;
+}
+
+.header__logo p {
+  font-size: 4rem;
+  text-transform: uppercase;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.header__logo p:hover {
+  color: #fff;
+}
+
+.header__mobileNav .fa-bars {
+  font-size: 4rem;
+  padding: 10px;
+}
+
+.header__nav {
+  display: none;
+  padding: 10px;
+}
+
+.header__nav a {
+  font-size: 2.2rem;
+  padding: 10px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.header__nav a:hover {
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+.header__mainBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  padding: 10px;
+  z-index: 1;
+}
+
+.header__mainBox h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #eee;
+}
+
+.header__mainBox h1 {
+  font-size: 6rem;
+  text-align: center;
+  color: #eee;
+  margin: 20px 0 20px 0;
+}
+
+.header__btn {
+  background: #eee;
+  padding: 15px 40px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+@media (min-width: 768px) {
+  .header__mobileNav {
+    display: none;
+  }
+  .header__nav {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    background-image: url("../img/mountains_1280.jpg");
+  }
+}
+/*# sourceMappingURL=main.css.map */
