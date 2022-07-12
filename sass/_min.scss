@@ -1,1 +1,11 @@
-
+@media (min-width: 576px) {
+	.impressions {
+		&__box2 {
+			.container {
+				img {
+                    width: 90%;
+                }
+			}
+		}
+	}
+}
