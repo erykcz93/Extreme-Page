@@ -26,17 +26,17 @@ a {
 }
 
 .show {
-    right: 0;
+	display: flex;
 }
 
 .nav__toggle {
-	display: none;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: -305px;
 	height: 100vh;
 	width: 300px;
 	background-color: #0d1b2a;

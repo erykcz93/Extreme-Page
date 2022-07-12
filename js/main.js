@@ -5,11 +5,12 @@ const closeBar = document.querySelector('.fa-x')
 const show = document.querySelector('.show')
 
 const showNav = () => {
-    navToggle.style.display = 'flex';
+    navToggle.style.right = 0
+    navToggle.style.transition = 'right, .3s'
 }
 
 const closeNav = () => {
-    navToggle.style.display = 'none';
+    navToggle.style.right = -305 + 'px'
 }
 
 menuBar.addEventListener('click', showNav)
